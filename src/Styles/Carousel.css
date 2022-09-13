@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    padding: 0 100px;
+}
+
+header{
+    width: 100%;
+    background: url("maillot.jpg");
+    height: 250px;
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    border-radius: 25%;
+}
+
+.text{
+    width: 100%;
+}
+
+.text h1{
+    color: aliceblue;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    justify-content: center;
+}
+
