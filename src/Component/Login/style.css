@@ -11,7 +11,7 @@
 	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
 } */
 
-.containers{
+.containers {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -175,8 +175,4 @@
 
 .social-login__icon:hover {
 	transform: scale(1.5);	
-}
-.button__text{
-	border: none;
-	background-color: none ;
 }

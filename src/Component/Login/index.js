@@ -7,10 +7,17 @@ import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { onLoggin } from '../../redux/Login/LoginAction';
 
 
 const Login = () => {
     const dispatch = useDispatch();
+    const log = ()=>{
+        return(
+            dispatch(isLogged()),
+            dispatch(onLoggin())
+        )
+    };
     return (
         <div>
             <div class="containers">
@@ -25,8 +32,8 @@ const Login = () => {
                                 <i></i>
                                 <input type="password" class="login__input" placeholder="Password"></input>
                             </div>
-                            <Link to='/'>
-                            <button class="button login__submit" onClick={()=>dispatch(isLogged())}>
+                            <Link to='/'  style={{ textDecoration: 'none' }}>
+                            <button class="button login__submit" onClick={log}>
                                 
                                 <span class="button__text" >Log In Now</span>
                                 

@@ -6,8 +6,8 @@ export const isLogged = () => {
     }
 }
 
-// export const isLogout =() =>{
-//     return {
-//         type:types.LOGOUT
-//     }
-// }
+export const onLoggin =() =>{
+    return {
+        type:types.ONLOGIN
+    }
+}
